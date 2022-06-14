@@ -1,1 +1,0 @@
-alert('Simple alert message in external js file');
