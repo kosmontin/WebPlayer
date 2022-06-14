@@ -1,5 +1,7 @@
 # WebPlayer
 
+![](screenshots/index.jpg)
+
 ## Описание
 
 Данная страница написана с целью изучения темы верстки. Для платформы [Devman](https://dvmn.org/).
