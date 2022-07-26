@@ -25,8 +25,8 @@
     background-color: transparent;
 }
 
-.js-fullscreen-button {
-    margin-left: auto;
+.buttons-frame .main-buttons-frame {
+    flex-grow: 1;
 }
 
 .button-icon {
