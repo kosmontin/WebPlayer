@@ -11,6 +11,9 @@
 
 .buttons-frame {
      background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .player-button {
@@ -22,8 +25,8 @@
     background-color: transparent;
 }
 
-.buttons-frame .js-fullscreen-button {
-    float: right;
+.js-fullscreen-button {
+    margin-left: auto;
 }
 
 .button-icon {
