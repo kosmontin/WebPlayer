@@ -3,43 +3,79 @@ body {
 }
 
 .player {
-    display: flex;
-    flex-direction: column;
     width: 800px;
     height: 600px;
+    display: flex;
+    flex-direction: column;
     box-shadow: 0 0 20px rgba(0,0,0,0.9);
 }
-.video-frame {
+.screen {
     flex-grow: 2;
 }
 
-.buttons-frame {
-     background-color: black;
+.bottom-controls {
+    /*cursor: pointer;*/
+    background-color: black;
+    height: 45px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    align-items: center;
+}
+
+.left-buttons {
+    display: inherit;
+}
+
+.viewing-panel {
+    font-family: 'Roboto', sans-serif;
+    display: inherit;
+    flex-grow: 2;
+}
+
+.viewing-progressbar {
+    flex-grow: 2;
+    margin: auto 10px;
+}
+
+.viewing-progressbar .bar {
+    background-color: black;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.bar .slider {
+    background-color: #f8104d;
+    height: 5px;
+    border-radius: 3px;
+}
+
+.right-buttons {
+    display: inherit;
 }
 
 .player-button {
     cursor: pointer;
-    border: none;
-    width: 35px;
-    height: 45px;
-    margin: 0;
-    background-color: transparent;
+    margin: 10px;
 }
 
-.buttons-frame .main-buttons-frame {
-    flex-grow: 1;
+.button-icon, .player-time {
+    color: white;
+
 }
 
 .button-icon {
-    color: white;
-    font-size: large;
+    font-size: larger;
 }
 
-.player-time {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #f8104d;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 3px;
+    border-color: white;
+    margin-left: -3px;
 }
+

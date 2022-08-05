@@ -17,23 +17,38 @@
 </head>
 <body>
   <div id="player" class="player">
-
-    <div class="js-video-container video-frame"></div>
-
-    <div class="buttons-frame">
-      <div class="main-buttons-frame">
-        <button class="js-play-button player-button"><i class="fa fa-play button-icon" aria-hidden="true"></i></button>
-        <button class="js-pause-button player-button" hidden><i class="fa fa-pause button-icon" aria-hidden="true"></i></button>
-        <button class="js-mute-button player-button" hidden><i class="fa fa-volume-up button-icon" aria-hidden="true"></i></button>
-        <button class="js-volume-button player-button"><i class="fa fa-volume-off button-icon" aria-hidden="true"></i></button>
-        <i class="js-current-time player-time"></i>
+    <div class="js-video-container screen"></div>
+    <div class="bottom-controls">
+      <div class="left-buttons">
+        <div class="play-button">
+          <div class="js-play-button player-button"><i class="fa fa-play button-icon" aria-hidden="true"></i></div>
+          <div class="js-pause-button player-button" hidden><i class="fa fa-pause button-icon" aria-hidden="true"></i></div>
+        </div>
+        <div class="volume-button">
+          <div class="js-mute-button player-button" hidden><i class="fa fa-volume-up button-icon" aria-hidden="true"></i></div>
+          <div class="js-volume-button player-button"><i class="fa fa-volume-off button-icon" aria-hidden="true"></i></div>
+        </div>
       </div>
-      <div class="fullscreen-button-frame">
-        <i class="js-duration player-time"></i>
-        <button class="js-fullscreen-button fullscreen-button player-button"><i class="fa fa-expand button-icon"></i></button>
+      <div class="viewing-panel">
+        <div class="viewing-time">
+          <div class="js-current-time player-time"></div>
+        </div>
+        <div class="viewing-progressbar">
+          <div class="js-progress bar">
+            <div class="js-progress-slider slider"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="video-duration">
+          <div class="js-duration player-time"></div>
+        </div>
+      </div>
+      <div class="right-buttons">
+        <div class="fullscreen-button">
+          <div class="js-fullscreen-button player-button"><i class="fa fa-expand button-icon"></i></div>
+        </div>
       </div>
     </div>
-
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
