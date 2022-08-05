@@ -27,8 +27,10 @@ body {
 }
 
 .viewing-panel {
+    height: 45px;
     font-family: 'Roboto', sans-serif;
     display: inherit;
+    align-items: center;
     flex-grow: 2;
 }
 
@@ -69,6 +71,10 @@ body {
 }
 
 .dot {
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+    opacity: 0;
     width: 8px;
     height: 8px;
     background-color: #f8104d;
@@ -76,6 +82,14 @@ body {
     border-radius: 50%;
     border-width: 3px;
     border-color: white;
-    margin-left: -3px;
+    margin-left: -7px;
 }
+
+.viewing-panel:hover .viewing-progressbar .bar .dot{
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+}
+
 
